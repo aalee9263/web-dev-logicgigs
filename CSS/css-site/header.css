@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.logo-site {
+    /* display: flex; */
+    align-items: space-around;
+    border: solid 2px green;
+}

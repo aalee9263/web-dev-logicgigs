@@ -1,0 +1,37 @@
+
+.animation {
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+    width: 420px;
+    height: 420px;
+    border: solid 2px black;
+    outline: solid 1px black;
+
+}
+.child {
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px; 
+    font-weight: 800;
+    background-color: red;
+    /* animation-duration: 4s;
+    animation-delay: 2s;
+    animation-name: ali;
+    animation-iteration-count: infinite; */
+    position: relative;
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-direction: alternate-reverse; */
+    animation: ali 4s linear 2s infinite alternate;
+}
+
+@keyframes ali {
+    0%   {background-color:red; left:0px; top:0px;}
+25%  {background-color:yellow; left:300px; top:0px;}
+50%  {background-color:blue; left:300px; top:300px;}
+75%  {background-color:green; left:0px; top:300px;}
+100% {background-color:red; left:0px; top:0px;}
+}
