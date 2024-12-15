@@ -1,0 +1,30 @@
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+     
+}
+
+.header a {
+    font-size: large;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    color: white;
+}
+
+.header a:hover {
+    background-color: #484545;
+    color: white;
+}
+
+.header .searchBox {
+    border-radius: 40%;
+    margin-left: 50px;
+    size: 80px;
+}
+.header .searchBox input {
+    size: 80px;
+}
