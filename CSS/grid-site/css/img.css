@@ -1,0 +1,30 @@
+.cards {
+    display: flex;
+    padding: 1;
+}
+.polaroid {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+  div.container {
+    text-align: center;
+    /* padding: 10px 20px; */
+  }
+  .polaroid {
+      /* width: 300px; Set container size */
+      overflow: hidden; /* Hide overflow to keep the zoom effect contained */
+      /* margin: 20px auto; Center the image on the page */
+      padding: 10px;
+  }
+  
+  .polaroid img {
+      width: 100%; /* Make image responsive */
+      transition: transform 0.3s ease; /* Smooth zoom effect */
+  }
+  
+  /* Zoom-Out Effect on Hover */
+  .polaroid img:hover {
+      transform: scale(1.2); /* Zoom out */
+  }

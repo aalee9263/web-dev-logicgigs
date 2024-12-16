@@ -1,0 +1,35 @@
+.aside-item {
+    grid-area: aside;
+    border: 1px solid rgb(159, 159, 104);
+    height: 70vh;
+    background-color: #846FE1;
+    width: 100%;
+}
+
+.aside-items ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+/* li {
+    display: block;
+} */
+.aside-items ul li a {
+    text-decoration: none;
+    background-color: #846FE1;
+    color: aliceblue;
+    padding: 12px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+
+}
+
+li a:hover {
+    background-color: #c4b9f3;
+    display: block;
+}
+

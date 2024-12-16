@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Area Website</title>
+    <link rel="stylesheet" href="./css/header-item.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <link rel="stylesheet" href="./css/img.css">
+    <!-- <link rel="stylesheet" href="./css/drop-down.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(39, 38, 38);
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header '
+                'aside aside main main main main'
+                'aside aside main main main main'
+                'footer footer footer footer footer footer';
+            grid-gap: 12px;
+            /* height: 100vh; */
+            padding: 12px;
+            color: white;
+
+        }
+
+        .fcenter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+
+        }
+
+        header {
+            grid-area: header;
+            border: 1px solid rgb(159, 159, 104);
+            background-color: #a695ee;
+            height: 10vh;
+        }
+
+
+
+        main {
+            grid-area: main;
+            border: 1px solid rgb(159, 159, 104);
+            height: 70vh;
+        }
+
+        footer {
+            grid-area: footer;
+            border: 1px solid rgb(159, 159, 104);
+            height: 10vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="fcenter">
+            <ul class="header-item">
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </header>
+        <aside class="fcenter">
+            <ul class="aside-item">
+                <li>
+                    <a href="#">HTML</a>
+                </li>
+                <li>
+                    <a href="#">CSS</a>
+                </li>
+                <li>
+                    <a href="#">JavaScript</a>
+                </li>
+                <li>
+                    <a href="#">BootStrap 4</a>
+                </li>
+                <li>
+                    <a href="#">PHP</a>
+                </li>
+                <li>
+                    <a href="#">MySQL</a>
+                </li>
+                <li>
+                    <a href="#">MongoDB</a>
+                </li>
+                <li>
+                    <a href="#">More
+                            <!-- <div class="dropdown-content">
+                                <a href="#">Python</a>
+                                <a href="#">C/C++</a>
+                                <a href="#">Rubby</a>
+                            </div> -->
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="fcenter">
+            <div class="cards">
+                <div class="polaroid">
+                    <img src="./img/img_5terre.jpg" alt="5 Terre" style="width:100%">
+                    
+                    <div class="container">
+                    <p>Cinque Terre</p>
+                    </div>
+                  </div>
+                <div class="polaroid">
+                    <img src="./img/lights600x400.jpg" alt="5 Terre" style="width:100%">
+                    <div class="container">
+                    <p>Cinque Terre</p>
+                    </div>
+                  </div>
+                <div class="polaroid">
+                    <img src="./img/pic_trulli.jpg" alt="5 Terre" style="width:100%">
+                    <div class="container">
+                    <p>Cinque Terre</p>
+                    </div>
+                  </div>
+            </div>
+
+        </main>
+        <footer class="fcenter">Footer</footer>
+    </div>
+</body>
+
+</html>
