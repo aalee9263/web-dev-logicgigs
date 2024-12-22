@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+        
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            /* align-items: center; */
+            /* flex-direction: column; */
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .docCont {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+            color: black;
+            padding: 15px;
+            border: 2px solid grey;
+            width: 300px;
+            height: 250px;
+            /* padding: 20px; */
+            margin: 12px;
+        }
+
+        h1, h4, button, p {
+padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="docCont">
+            
+            <h1>Events</h1>
+            <h4>On Click Event</h4>
+            <button onclick="document.getElementById('inElementEvent').innerHTML = Date()">click to see Date&Time</button>
+                <p id="inElementEvent">
+
+                </p>            
+        </div>
+        <div class="docCont">
+            
+            <h1>Events</h1>
+            <h4>On Click Event within element</h4>
+            <button onclick="this.innerHTML = Date()">click to see Date&Time</button>
+        </div>
+        <div class="docCont">
+            
+            <h1>Events</h1>
+            <h4>On Click Event with calling function </h4>
+            <button onclick="dateFunc()">click to see Date&Time</button>
+            <p id="dateFunc">
+            </p>
+        </div>
+        <!-- <div class="docCont">
+            
+            <h1>Events</h1>
+            <h4>On Mouse Over Event </h4>
+            <button onmouseover="dateMouseOver()" onmouseout="dateMouseOut">click to see Date&Time</button>
+
+            <p id="mouseOver">
+            </p>
+        </div> -->
+        <div class="docCont" id="divMouseOver" onmouseout="dateOut">
+            
+            <h1>Events</h1>
+            <h4>On Mouse Over Event </h4>
+            <button onmouseover="dateMouseOver()">click to see Date&Time</button>
+
+            <p id="mouseOver">
+            </p>
+        </div>
+        <div class="docCont">
+            
+            <h1>Events</h1>
+            <h4>On key Down Event </h4>
+            <button onkeydown="dateKeyDown()">click to see Date&Time</button>
+
+            <p id="keyDown">
+            </p>
+        </div>
+        <div class="docCont">
+            
+            <h1>Events</h1>
+            <h4>On key Down Event </h4>
+            <button onload="dateOnLoad()">click to see Date&Time</button>
+
+            <p id="onLoad">
+            </p>
+        </div>
+    </div>
+
+
+
+<script>
+    function dateFunc () {
+        document.getElementById('dateFunc').innerHTML = Date()
+    }
+    function dateMouseOver () {
+        document.getElementById('mouseOver').innerHTML = Date()
+    }
+    function dateOut () {
+        document.getElementById('divMouseOver').innerHTML = ""
+    }
+    function dateKeyDown () {
+        document.getElementById('keyDown').innerHTML = Date()
+    }
+
+</script>
+
+
+</body>
+
+</html>

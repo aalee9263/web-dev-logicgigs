@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objects Display</title>
     <style>
-        #paraBox, {
+        #paraBox {
             border: solid 2px rgb(142, 142, 142);
             background-color: rgb(206, 202, 202);
             width: auto;
@@ -28,7 +28,10 @@
             <li>object using by JSON.stringify()</li>
         </ul> -->
     </p>
-    <p id="demo"></p>
+    <p id="propByName"></p>
+    <p id="propByLoop"></p>
+    <p id="objValue"></p>
+    <p id="jsonStr"></p>
     <script>
         const person = 
         { 
@@ -40,7 +43,7 @@
             // } 
         }
 //this will show the [object object]
-document.getElementById("demo").innerHTML = 
+document.getElementById("propByName").innerHTML = 
 person
 
 //using for in loop
@@ -49,11 +52,16 @@ let text = " ";
 
 for (let x in person) {
  
-    text += person[x] + " ";
+    text += person[x] + "  " ;
 
 }
 
-document.getElementById("demo").innerHTML = text
+document.getElementById("propByLoop").innerHTML = text
+
+const myArry = Object.values(person);
+document.getElementById("objValue").innerHTML = myArry
+
+
 
 
 </script>
