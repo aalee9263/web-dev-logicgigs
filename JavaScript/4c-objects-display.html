@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objects Display</title>
     <style>
-        p {
+        #paraBox, {
             border: solid 2px rgb(142, 142, 142);
             background-color: rgb(206, 202, 202);
             width: auto;
@@ -19,8 +19,16 @@
 </head>
 
 <body>
+    <p id="paraBox">
+        four methods to display object
+        <!-- <ul>
+            <li>object property by name</li>
+            <li>object property in a loop</li>
+            <li>object using by object.value()</li>
+            <li>object using by JSON.stringify()</li>
+        </ul> -->
+    </p>
     <p id="demo"></p>
-
     <script>
         const person = 
         { 
@@ -31,9 +39,22 @@
             // return this.firstName + " " + this.lastName + "with 'this' keyword"
             // } 
         }
-
+//this will show the [object object]
 document.getElementById("demo").innerHTML = 
-person.name 
+person
+
+//using for in loop
+
+let text = " ";
+
+for (let x in person) {
+ 
+    text += person[x] + " ";
+
+}
+
+document.getElementById("demo").innerHTML = text
+
 
 </script>
 </body>
