@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects Display</title>
+    <style>
+        p {
+            border: solid 2px rgb(142, 142, 142);
+            background-color: rgb(206, 202, 202);
+            width: auto;
+            height: 200px;
+            text-align: center;
+            font-size: 26px;
+            color: rgb(186, 45, 14);
+        }
+    </style>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const person = 
+        { 
+            name: "John",  
+            age: 45, 
+            city: "Pakistan",
+            // testing: function() {
+            // return this.firstName + " " + this.lastName + "with 'this' keyword"
+            // } 
+        }
+
+document.getElementById("demo").innerHTML = 
+person.name 
+
+</script>
+</body>
+
+</html>

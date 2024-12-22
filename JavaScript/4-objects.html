@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <style>
+        p {
+            border: solid 2px rgb(142, 142, 142);
+            background-color: rgb(206, 202, 202);
+            width: auto;
+            height: 200px;
+            text-align: center;
+            font-size: 26px;
+            color: rgb(186, 45, 14);
+        }
+    </style>
+</head>
+
+<body>
+    <p id="htmlTag">
+        this is paragraph
+        <p id="nation">
+
+        </p>
+    </p>
+    <p id="paraTag"> This is another parapraph. that will not change</p>
+
+    <script>
+        const person = { firstName: "John", lastName: "Doe", age: 45, eyeColor: "blue" }
+
+        var x = person
+
+        x.age = 12
+
+        person.nationality = "America"
+
+        document.getElementById("htmlTag").innerHTML =
+            person.firstName + " " + person.lastName + " is " + person.age + " years old."
+
+
+        document.getElementById("paraTag").innerText =
+            person.firstName + " " + person.lastName + " is " + person.age + " years old."
+        
+            // document.getElementById("nation").innerHTML = person.nationality
+    </script>
+    <!-- 
+<div id="exampleHTML">Hello <b>World</b></div>
+<script>
+  const element = document.getElementById("exampleHTML");
+  console.log(element.innerHTML); // Outputs: "Hello <b>World</b>"
+  element.innerHTML = "<i>Changed!</i>"; // Replaces the content with italicized text.
+</script>
+<div id="exampleText">Hello <b>World</b></div>
+<script>
+  const element = document.getElementById("exampleText");
+  console.log(element.innerText); // Outputs: "Hello World"
+  element.innerText = "Changed!"; // Replaces the content with plain text.
+</script> -->
+
+
+</body>
+
+</html>
