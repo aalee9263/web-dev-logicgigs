@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+<style>
+    .box1 , .box2 , .box3 {
+        border: solid 2px rgb(142, 142, 142);
+        background-color: rgb(206, 202, 202);
+        width: auto;
+        height: 120px;
+        text-align: center;
+        font-size: 26px;
+        font-weight: bolder;
+        color: rgb(186, 45, 14);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+    <div class="box3">
+    </div>
+
+    <script>
+        var langs = ["HTML", "CSS", "JS", "PHP", "Python", "Java", "C++", "C#"]
+
+        var company = ["dell", "hitech", "apple", "samsung" ]
+        // document.querySelector('.box').innerHTML = langs.length
+
+        // document.querySelector('.box').innerHTML = langs.toString();
+        
+        // document.querySelector('.box').innerHTML = langs.join('___');
+        
+        // document.querySelector('.box').innerHTML = langs.at(0);
+
+        // var popItem = langs.pop();
+        
+        // document.querySelector('.box1').innerHTML = popItem
+
+        // document.querySelector('.box2').innerHTML = langs
+        
+        // var pushItem = langs.push('React');
+        
+        // document.querySelector('.box1').innerHTML = pushItem
+
+        // document.querySelector('.box2').innerHTML = langs
+
+        // document.querySelector('.box1').innerHTML = langs
+
+        // var shiftItem = langs.shift();        
+       
+        // document.querySelector('.box2').innerHTML = shiftItem
+
+        // document.querySelector('.box3').innerHTML = langs
+
+        // document.querySelector('.box1').innerHTML = langs
+
+        // var unshiftItem = langs.unshift('React');        
+       
+        // document.querySelector('.box2').innerHTML = unshiftItem
+
+        // document.querySelector('.box3').innerHTML = langs
+        
+
+        // document.querySelector('.box1').innerHTML = langs
+
+        // var lengthItem = (langs[langs.length]='Banana');        
+       
+        // document.querySelector('.box2').innerHTML = lengthItem
+
+        // document.querySelector('.box3').innerHTML = langs
+        
+        // document.querySelector('.box1').innerHTML = langs.join('___');
+
+        // var mixArr = langs.concat(company); 
+
+        // var addEle = langs.concat(company, ('Banana'));  
+       
+        // document.querySelector('.box2').innerHTML = mixArr.join('___');
+        
+        
+        // document.querySelector('.box3').innerHTML = addEle.join('__');
+        
+        // document.querySelector('.box1').innerHTML = langs.join('___');
+
+        //*********splice() changes in original array*******
+
+        // var spliceItems = langs.splice(1,1, 'Banana'); 
+       
+        // document.querySelector('.box2').innerHTML = spliceItems;
+
+        // document.querySelector('.box3').innerHTML = langs;
+        
+        // document.querySelector('.box1').innerHTML = langs.join('___');
+
+        // //*********toSpliced() create new array *************
+        // var spliceItems = langs.toSpliced(1,1, 'Banana'); 
+       
+        // document.querySelector('.box2').innerHTML = spliceItems.join('___');
+
+        // document.querySelector('.box3').innerHTML = langs.join('___');
+        
+        document.querySelector('.box1').innerHTML = langs.join('___');
+
+
+        var sliceItems = langs.slice(0,1); 
+       
+        document.querySelector('.box2').innerHTML = sliceItems.join('___');
+
+        document.querySelector('.box3').innerHTML = langs.join('___');
+        
+
+    
+    </script>
+</body>
+</html>
