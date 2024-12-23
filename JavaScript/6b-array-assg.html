@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sorting</title>
+    <style>
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box1, .box2 {
+            border: solid 2px rgb(142, 142, 142);
+            background-color: rgb(206, 202, 202);
+            width: 620px;
+            height: 120px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bolder;
+            color: rgb(37, 8, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 12px;
+        }
+
+        button {
+            margin: 12px;
+            padding: 8px;
+            color: rgb(37, 8, 1);
+            border-radius: 12px;
+            font-size: 16px;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+<div class="main">
+    <h5 style="font-size: 26px; padding: 4px; margin: 4px; text-decoration: underline;">Array Sorting :</h5>
+
+    <div class="box1">
+        <h4 id="original">
+            Original Array Numbers: [40, 100, 1, 5, 25, 10]
+            
+            
+        </h4>
+    </div>
+    <div class="box2">
+    </div>
+    <div class="box3">
+    </div>
+    
+    <div>
+        
+        <button onclick="sortNum()">
+            Sort By Numerically
+        </button>
+        <button onclick="sortAlpha()">
+            Sort By Alphabetically
+        </button>
+        
+        <button onclick="origArr()">
+            Original Array
+        </button>
+    </div>
+</div>
+
+    <script>
+
+        var num = ['40', '100', '1', '5', '25', '10']
+       
+        function sortNum() {
+var byAlpha = num.toSorted(function (a, b) { return a - b });
+            document.querySelector('.box2').innerHTML = 
+            `Sort By Numerically: ${byAlpha}`;
+            
+        }
+        function sortAlpha() {
+            var byNumb = num.toSorted();
+            document.querySelector('.box2').innerHTML = 
+            `Sort By Alphabetically: ${byNumb}`;
+        }
+        function origArr() { 
+            document.querySelector('.box2').innerHTML = 
+            `Original Array: ${num.join('__')}`;
+        }
+
+
+    </script>
+</body>
+
+</html>
