@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            border: solid 2px rgb(142, 142, 142);
+            color: back;
+            font-size: 25px;
+            height: 200px;
+            width: auto;
+            background-color: #d2d2d2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 12px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box" id="box1">
+        </div>
+        <!-- <div class="box" id="box2">
+        </div> -->
+    </div>
+    <script>
+
+        let str = "     Hello World    ";
+        // document.querySelector('.box').innerHTML = str.length
+
+        let text = "We are the so-called \"Vikings\" from the north.";
+        let txt = "I'm a good boy";
+
+
+        // document.querySelector('.box').innerHTML = text;
+        // document.querySelector('.box').innerHTML = txt;
+        // document.querySelector('.box').innerHTML = "Hello" + "World" + "Text";
+        // document.querySelector('.box').innerHTML = "Hello" + "World" + "Text";
+        // document.querySelector('#box1').innerHTML = str + " " + txt + " " + "another txt" ;
+        // document.querySelector('#box2').innerHTML = str.concat(" ", txt);
+        // let tTxt = str.trim();
+        // let tTxt = str.trimStart();
+        // let tTxt = str.trimEnd();
+        // let tTxt = str.trimLeft();
+        // let tTxt = str.trimRight();
+        // document.querySelector('#box1').innerHTML = str + "without trim" + " = " + str.length;
+        // document.querySelector('#box2').innerHTML = tTxt + "with trim" + " = " + tTxt.length;
+        // // let tTxt = "abc";
+        // let tTxt = "5";
+        // let pTxt = tTxt.padStart(5, "5");        
+        // let pTxt = tTxt.padEnd(6, "0");        
+        // document.querySelector('#box1').innerHTML = "Original Text" + " = " + tTxt + 
+        // "<br>" + "Pad Text" + " = " + pTxt;
+        // let numb = 5;
+        // let toStr = numb.toString();
+        // let pTxt = toStr.padStart(6, "0");        
+        // document.querySelector('#box1').innerHTML = 
+        // "Number" + " = " + numb +
+        // "<br>" + "Type of numb" + " = " + typeof(toStr) +
+        // "<br>" + "Pad Text" + " = " + pTxt;
+        
+        // let rTxt = txt.repeat(2);        
+        // document.querySelector('#box1').innerHTML = 
+        // "Original Text" + " = " + txt +
+        // "<br>" + "Repeat Text" + " = " + rTxt;
+        
+        
+        // let sentence = "Pleae visit Microsoft"
+        // let replTxt = sentence.replace("Microsoft", "w3School");        
+        // document.querySelector('#box1').innerHTML = 
+        // "Original Text" + " = " + sentence +
+        // "<br> <br> " + "Replace Text" + " = " + replTxt;
+        
+        // let sentence = "Pleae visit Microsoft"
+        // let replTxt = sentence.replace(/microsoft/i, "w3School");        
+        // document.querySelector('#box1').innerHTML = 
+        // "Original Text" + " = " + sentence +
+        // "<br> <br> " + "Replace Text" + " = " + replTxt;
+        
+        
+        // let sentence = "Visit Microsoft Software in the Company of Microsoft"
+        // let replTxt = sentence.replace(/Microsoft/g, "w3School");        
+        // let replTxt = sentence.replace(/microsoft/ig, "w3School");        
+        // document.querySelector('#box1').innerHTML = 
+        // "Original Text" + " = " + sentence +
+        // "<br> <br> " + "Replace Text" + " = " + replTxt;
+        
+        let langs = ["HTML,CSS,JS,PHP,Python,Java"];
+        let langsToArr = langs.split(",")        
+        // document.querySelector('#box1').innerHTML = 
+        // "Original Text" + " = " + langs + "<br> <br> " + "Array Text" + " = " + langsToArr[1];
+        document.querySelector('#box1').innerHTML = langsToArr[1];
+        
+
+
+    </script>
+</body>
+
+</html>
