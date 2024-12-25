@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Search</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .box {
+            border: solid 2px rgb(142, 142, 142);
+            color: back;
+            font-size: 25px;
+            height: 200px;
+            width: auto;
+            background-color: #d2d2d2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 12px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Strings Search: </h1>
+        <div class="box" id="box1">
+        </div>
+        <!-- <div class="box" id="box2">
+        </div> -->
+    </div>
+    <script>
+      
+        // let langs = "HTML,CSS,JS,PHP,Python,Java";
+        // let langsToArr = langs.split(",")        
+        // document.querySelector('#box1').innerHTML = 
+        // "Original Text" + " = " + langs + "<br> <br> " + "Array Text" + " = " + langsToArr[1];
+        // document.querySelector('#box1').innerHTML = langsToArr;
+        
+      
+        // let text = "Please locate where 'locate' occurs!";
+        // let indTxt = text.indexOf("locate")        
+        // document.querySelector('#box1').innerHTML = 
+        // "Original Text" + " = " + text + "<br> <br> " + "Index Text" + " = " + indTxt;
+      
+        // let text = "Please locate where 'locate' occurs!";
+        // let indTxt = text.lastIndexOf("locate")        
+        // document.querySelector('#box1').innerHTML = 
+        // "Original Text" + " = " + text + "<br> <br> " + "Index Text" + " = " + indTxt;
+      
+        // let text = "Please locate where 'locate' occurs!";
+        // let indTxt = text.indexOf("locate", 20)        
+        // document.querySelector('#box1').innerHTML = 
+        // "Original Text" + " = " + text + "<br> <br> " + "Index Position" + " = " + indTxt;
+      
+        let text = "Please locate where 'locate' occurs and eretation!";
+        // let indTxt = text.match("ere")        
+        let indTxt = text.match("te") ;       
+        document.querySelector('#box1').innerHTML = 
+        "Original Text" + " = " + text + "<br> <br> " + "Array Length" + " = " + indTxt.length + "<br> <br> " + "Array" + " = " + indTxt;
+
+        
+
+
+    </script>
+</body>
+
+</html>

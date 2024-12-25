@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box1, .box2 {
+            border: solid 2px rgb(203, 202, 202);
+            color: rgb(31, 1, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: auto;
+            font-size: 26px;
+            background-color: #eeeded;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Numbers Methods: </h1>
+        <div class="box1"></div>
+        <!-- <div class="box2"></div> -->
+    </div>
+    
+    <script>
+                ///// 3 methods to convert number into string.
+    
+                let numStr = "5";
+        let num = 5;
+    
+        // let convNumb = Number(numStr) + num;
+        // let convNumb = +numStr + num;
+        // let convNumb = parseInt(numStr) + num;
+        // let convNumb = numStr.toString() + num;
+
+        // document.querySelector('.box1').innerHTML = 
+        // "Original Number in String" + " = " + numStr + "<br> <br> " + "Number" + " = " + num
+        // + "<br> <br> " + "Convert Str into Number" + " = " + convNumb;
+        
+        // let randNumb =  Math.random();
+        // console.log(randNumb);
+        // let randNumb1 = (Math.round(Math.random()) * 10) ;
+        // document.querySelector('.box1').innerHTML = 
+        // "Random Numbers less than 1" + " = " + randNumb
+        // + "<br> <br>" + "Random Numbes more than 1" + " =" + randNumb1; 
+        
+        // let x = 10 ;
+        // let y = 20 ;
+        // let z = "30";
+        // let xyz = x + y + z;
+        // let zxy = z + x + y;
+        // document.querySelector('.box1').innerHTML = 
+        // "if Numbers first then result" + " =" + xyz
+        // + "<br> <br>" + "If string first then result" + " = " + zxy; 
+        
+        
+        let x = 10 / "apple" ;
+        let y = 10 / "5" ;
+        let xN = isNaN(x);
+        let yN = isNaN(x);
+
+        document.querySelector('.box1').innerHTML = 
+        "Numbers divide by string then result" + " = " + x +
+        " <br> <br> " + "Is a Number of X Value " + " = " + xN +
+        " <br> <br> " + "Is a Number of Y Value " + " = " + yN;
+    </script>
+</body>
+</html>
